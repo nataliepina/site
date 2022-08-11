@@ -1,0 +1,96 @@
+.about {
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.about__name {
+  color: var(--clr-primary);
+}
+
+.about__role {
+  margin-bottom: 1em;
+}
+
+.about__desc {
+  max-width: 600px;
+}
+
+.about__desc {
+  margin-top: 1em;
+}
+
+.about__contact {
+  overflow: hidden;
+  text-align: center;
+}
+
+.about__contact {
+  margin: 6em 0;
+}
+
+.about__contact:before,
+.about__contact:after {
+  background-color: var(--clr-fg);
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: super;
+  width: 50%;
+}
+
+.about__contact:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.about__contact:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.about .link--icon {
+  margin-right: 0.8em;
+  font-size: 24px;
+}
+
+.about .link--icon:last-child {
+  margin-right: 0;
+}
+
+.about .btn--outline {
+  margin-right: 1em;
+}
+
+@media (max-width: 600px) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+}
+
+.gradient-text {
+  /* fallback */
+  color: black;
+}
+
+/* gradient text for modern browsers */
+@supports (background-clip: text) {
+  .gradient-text {
+    background-color: black;
+
+    /* Create the gradient. */
+    background-image: var(--gradient);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+}
