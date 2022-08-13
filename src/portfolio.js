@@ -23,7 +23,7 @@ const projects = [
       'UI Kit provides tools for engineers to build applications that follow the standards and guidelines of the D2DS Design System.',
     stack: ['Emotion', 'TypeScript', 'React'],
     sourceCode: 'https://github.com/dcos-labs/ui-kit',
-    livePreview: 'http://design-system.d2iq.com/',
+    livePreview: 'https://design-system.d2iq.com/',
   },
   {
     name: 'Stoic Quote',
