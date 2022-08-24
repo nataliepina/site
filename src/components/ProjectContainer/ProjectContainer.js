@@ -1,9 +1,8 @@
 import './ProjectContainer.css'
 
+import { FaGithub } from 'react-icons/fa'
+import { MdOutlineOpenInNew } from 'react-icons/md'
 import uniqid from 'uniqid'
-
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LaunchIcon from '@material-ui/icons/Launch'
 
 const ProjectContainer = ({ project }) => (
   <div className='project'>
@@ -28,7 +27,7 @@ const ProjectContainer = ({ project }) => (
         target='_blank'
         rel='noopener noreferrer'
       >
-        <GitHubIcon />
+        <FaGithub />
       </a>
     )}
 
@@ -40,7 +39,7 @@ const ProjectContainer = ({ project }) => (
         target='_blank'
         rel='noopener noreferrer'
       >
-        <LaunchIcon />
+        <MdOutlineOpenInNew />
       </a>
     )}
   </div>

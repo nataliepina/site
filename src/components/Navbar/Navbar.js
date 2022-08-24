@@ -1,20 +1,12 @@
 import './Navbar.css'
 
-import {
-  useContext,
-  useState,
-} from 'react'
+import { useContext, useState } from 'react'
 
-import Brightness2Icon from '@material-ui/icons/Brightness2'
-import CloseIcon from '@material-ui/icons/Close'
-import MenuIcon from '@material-ui/icons/Menu'
-import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
+import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs'
+import { MdClose, MdMenu } from 'react-icons/md'
 
 import { ThemeContext } from '../../contexts/theme'
-import {
-  contact,
-  projects,
-} from '../../portfolio'
+import { contact, projects } from '../../portfolio'
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
@@ -71,7 +63,7 @@ const Navbar = () => {
         className='btn btn--icon nav__theme'
         aria-label='toggle theme'
       >
-        {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
+        {themeName === 'dark' ? <BsFillSunFill /> : <BsMoonStarsFill />}
       </button>
 
       <button
@@ -80,7 +72,7 @@ const Navbar = () => {
         className='btn btn--icon nav__hamburger'
         aria-label='toggle navigation'
       >
-        {showNavList ? <CloseIcon /> : <MenuIcon />}
+        {showNavList ? <MdClose /> : <MdMenu />}
       </button>
     </nav>
   )

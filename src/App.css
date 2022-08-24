@@ -96,7 +96,7 @@ h3,
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #835ee3;
+  --clr-primary: #875bf7;
 
   --gradient: linear-gradient(135deg, #40c9ff, #e81cff);
 
@@ -160,7 +160,7 @@ main {
   content: '';
   display: inline;
   width: 0%;
-  height: 0.2em;
+  height: 0.2rem;
   position: absolute;
   bottom: 0;
   background-color: var(--clr-primary);
@@ -180,6 +180,8 @@ main {
 
 .link--icon {
   color: var(--clr-fg);
+  font-size: 1.3rem;
+  padding: 0;
 }
 
 .btn {
@@ -187,7 +189,7 @@ main {
   cursor: pointer;
   padding: 0.8em 1.4em;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   transition: transform 0.2s ease-in-out;
 }
 
