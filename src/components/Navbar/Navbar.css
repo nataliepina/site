@@ -3,7 +3,8 @@
   display: flex;
 }
 .nav__list-item {
-  margin-left: 1.5em;
+  font-size: var(--font-size-l);
+  margin-left: 1.5rem;
 }
 
 .app .nav__hamburger {
@@ -11,6 +12,7 @@
 }
 
 .nav__theme {
+  font-size: var(--font-size-xl);
   margin-top: 0.4em;
 }
 
@@ -24,16 +26,19 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 10;
+    overflow: hidden;
   }
 
   .nav__list-item {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
   }
 
   .app .nav__hamburger {
+    font-size: var(--font-size-xxl);
     display: flex;
-    z-index: 2;
-    margin-left: 0.8em;
+    z-index: 10;
+    margin-left: 0.8rem;
+    margin-top: 0.4rem;
   }
 }

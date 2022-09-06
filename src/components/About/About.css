@@ -1,6 +1,6 @@
 .about {
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 
 .about__name {
@@ -8,7 +8,7 @@
 }
 
 .about__role {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .about__desc {
@@ -16,11 +16,11 @@
 }
 
 .about__desc {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .about .link--icon {
-  margin-right: 0.8em;
+  margin-right: 0.8rem;
   font-size: 24px;
 }
 
@@ -29,13 +29,13 @@
 }
 
 .about .btn--outline {
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 @media (max-width: 600px) {
   .app .about {
     align-items: flex-start;
-    margin-top: 2em;
+    margin-top: 2rem;
   }
 }
 

@@ -1,6 +1,8 @@
 import './Contact.css'
 
 import { contact } from '../../portfolio'
+import emailStatic from './assets/email-static.svg'
+import emailGif from './assets/email.gif'
 
 const Contact = () => {
   if (!contact.email) return null
@@ -9,9 +11,16 @@ const Contact = () => {
     <section className='section contact center' id='contact'>
       <h2 className='section__title'>Contact</h2>
       <a href={`mailto:${contact.email}`}>
-        <span type='button' className='btn btn--outline'>
-          Email Me
-        </span>
+        <p className='link link--nav'>Let's get in touch!</p>
+
+        <div>
+          <img
+            className='contact-gif static'
+            src={emailStatic}
+            alt='send me an email'
+          />
+          <img className='contact-gif' src={emailGif} alt='email sent' />
+        </div>
       </a>
     </section>
   )

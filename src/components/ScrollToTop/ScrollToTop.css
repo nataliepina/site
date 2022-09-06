@@ -1,7 +1,7 @@
 .scroll-top {
   position: fixed;
-  bottom: 2em;
-  right: 4em;
+  bottom: 2rem;
+  right: 4rem;
   background-color: transparent;
 }
 
