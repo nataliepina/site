@@ -1,9 +1,6 @@
 import './ScrollToTop.css'
 
-import React, {
-  useEffect,
-  useState,
-} from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { FiArrowUp } from 'react-icons/fi'
 
