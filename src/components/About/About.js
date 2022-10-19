@@ -34,7 +34,9 @@ const About = () => {
                 aria-label='freecodecamp'
                 className='link link--icon'
               >
-                <FaFreeCodeCamp />
+                <div className='social'>
+                  <FaFreeCodeCamp />
+                </div>
               </a>
             )}
 
@@ -44,7 +46,9 @@ const About = () => {
                 aria-label='twitter'
                 className='link link--icon'
               >
-                <FaTwitter />
+                <div className='social'>
+                  <FaTwitter />
+                </div>
               </a>
             )}
 
@@ -54,7 +58,9 @@ const About = () => {
                 aria-label='github'
                 className='link link--icon'
               >
-                <FaGithub />
+                <div className='social'>
+                  <FaGithub />
+                </div>
               </a>
             )}
 
@@ -64,7 +70,9 @@ const About = () => {
                 aria-label='linkedin'
                 className='link link--icon'
               >
-                <FaLinkedinIn />
+                <div className='social'>
+                  <FaLinkedinIn />
+                </div>
               </a>
             )}
           </>

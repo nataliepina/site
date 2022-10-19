@@ -5,7 +5,7 @@ const header = {
 
 const about = {
   name: 'Natalie Pina',
-  role: 'UX Engineer',
+  role: 'Senior UX Engineer',
   roleDescription: 'Bridging the gap between development and design.',
   description: '',
   social: {

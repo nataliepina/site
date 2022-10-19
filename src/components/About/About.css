@@ -8,19 +8,29 @@
 }
 
 .about__role {
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
 }
 
 .about__desc {
   max-width: 600px;
+  margin-top: 12px;
 }
 
-.about__desc {
-  margin-top: 1rem;
+.about__contact {
+  margin-top: 32px;
+  display: flex;
+  gap: 2px;
+}
+
+.social {
+  padding: 4px;
+  background: var(--elevation);
+  border-radius: 3px;
+  padding: 10px 10px 0 10px;
 }
 
 .about .link--icon {
-  margin-right: 0.8rem;
+  margin-right: 8px;
   font-size: 24px;
 }
 
@@ -47,8 +57,6 @@
 /* gradient text for modern browsers */
 @supports (background-clip: text) {
   .gradient-text {
-    background-color: black;
-
     /* Create the gradient. */
     background-image: var(--gradient);
 

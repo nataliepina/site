@@ -2,6 +2,7 @@ import './Header.css'
 
 import { header } from '../../portfolio'
 import Navbar from '../Navbar/Navbar'
+import { ReactComponent as Logo } from './assets/nplogo.svg'
 
 const Header = () => {
   const { homepage, title } = header
@@ -10,8 +11,8 @@ const Header = () => {
     <header className='header center'>
       <h3>
         {homepage ? (
-          <a href={homepage} className='link home gradient-text'>
-            {title}
+          <a href={homepage} className='link home'>
+            <Logo className='logo' />
           </a>
         ) : (
           title

@@ -17,3 +17,15 @@
 .home {
   font-size: var(--font-size-xl);
 }
+
+.logo {
+  height: 24px;
+  width: auto;
+  fill: var(--clr-primary);
+}
+
+@media (min-width: 600px) {
+  .logo {
+    height: 40px;
+  }
+}
