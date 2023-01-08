@@ -1,13 +1,14 @@
 import './index.css'
 
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
 import App from './App'
 import { ThemeProvider } from './contexts/theme'
 
-render(
+const container = document.getElementById('root')
+const root = createRoot(container) // createRoot(container!) if you use TypeScript
+root.render(
   <ThemeProvider>
-    <App />
-  </ThemeProvider>,
-  document.getElementById('root')
+    <App tab='home' />
+  </ThemeProvider>
 )
