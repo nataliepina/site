@@ -20,9 +20,9 @@ const projects = [
   {
     name: 'UI Kit',
     description:
-      'UI Kit provides tools for engineers to build applications that follow the standards and guidelines of the D2DS Design System.',
+      'UI Kit provides tools for engineers to build applications that follow the standards and guidelines of the D2iQ Product Language. Featured in the Storybook Encyclopedia.',
     stack: ['Emotion', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com/dcos-labs/ui-kit',
+    sourceCode: 'https://github.com/d2iq/ui-kit',
     livePreview: 'https://design-system.d2iq.com/',
   },
   {
