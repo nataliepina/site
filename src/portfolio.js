@@ -20,7 +20,7 @@ const projects = [
   {
     name: 'UI Kit',
     description:
-      'UI Kit provides tools for engineers to build applications that follow the standards and guidelines of the D2iQ Product Language. Featured in the Storybook Encyclopedia.',
+      'UI Kit is a React component library that provides tools for engineers to build applications. Featured in the Storybook Encyclopedia.',
     stack: ['Emotion', 'TypeScript', 'React'],
     sourceCode: 'https://github.com/d2iq/ui-kit',
     livePreview: 'https://design-system.d2iq.com/',
@@ -36,8 +36,6 @@ const projects = [
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
   'HTML',
   'CSS',
   'JavaScript',
@@ -53,7 +51,6 @@ const skills = [
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'natalie.a.pina@gmail.com',
 }
 

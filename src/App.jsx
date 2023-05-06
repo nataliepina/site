@@ -25,7 +25,6 @@ const App = () => {
         {/* <Bio /> */}
       </main>
 
-      {/* <ScrollToTop /> */}
       <Footer />
     </div>
   )
