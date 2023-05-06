@@ -1,8 +1,8 @@
-import './ProjectContainer.css'
+import './ProjectContainer.css';
 
-import { FaGithub } from 'react-icons/fa'
-import { MdOutlineOpenInNew } from 'react-icons/md'
-import uniqid from 'uniqid'
+import { FaGithub } from 'react-icons/fa';
+import { MdOutlineOpenInNew } from 'react-icons/md';
+import uniqid from 'uniqid';
 
 const ProjectContainer = ({ project }) => (
   <div className='project'>
@@ -43,6 +43,6 @@ const ProjectContainer = ({ project }) => (
       </a>
     )}
   </div>
-)
+);
 
-export default ProjectContainer
+export default ProjectContainer;

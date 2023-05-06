@@ -1,4 +1,4 @@
-import './Bio.css'
+import './Bio.css';
 
 const Bio = () => (
   <section className='section1'>
@@ -31,6 +31,6 @@ const Bio = () => (
       </div>
     </div>
   </section>
-)
+);
 
-export default Bio
+export default Bio;

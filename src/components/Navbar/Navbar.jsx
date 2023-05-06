@@ -1,18 +1,18 @@
-import './Navbar.css'
+import './Navbar.css';
 
-import { useContext, useState } from 'react'
+import { useContext, useState } from 'react';
 
-import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs'
-import { MdClose, MdMenu } from 'react-icons/md'
+import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs';
+import { MdClose, MdMenu } from 'react-icons/md';
 
-import { ThemeContext } from '../../contexts/theme'
-import { contact, projects } from '../../portfolio'
+import { ThemeContext } from '../../contexts/theme';
+import { contact, projects } from '../../portfolio';
 
 const Navbar = () => {
-  const [{ themeName, toggleTheme }] = useContext(ThemeContext)
-  const [showNavList, setShowNavList] = useState(false)
+  const [{ themeName, toggleTheme }] = useContext(ThemeContext);
+  const [showNavList, setShowNavList] = useState(false);
 
-  const toggleNavList = () => setShowNavList(!showNavList)
+  const toggleNavList = () => setShowNavList(!showNavList);
 
   return (
     <nav className='center nav'>
@@ -75,7 +75,7 @@ const Navbar = () => {
         {showNavList ? <MdClose /> : <MdMenu />}
       </button>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

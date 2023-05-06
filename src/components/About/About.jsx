@@ -1,16 +1,16 @@
-import './About.css'
+import './About.css';
 
 import {
   FaFreeCodeCamp,
   FaGithub,
   FaLinkedinIn,
   FaTwitter,
-} from 'react-icons/fa'
+} from 'react-icons/fa';
 
-import { about } from '../../portfolio'
+import { about } from '../../portfolio';
 
 const About = () => {
-  const { name, role, description, roleDescription, social } = about
+  const { name, role, description, roleDescription, social } = about;
 
   return (
     <div className='about'>
@@ -79,7 +79,7 @@ const About = () => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
