@@ -1,18 +1,12 @@
-import './App.css'
+import './App.css';
 
-import { useContext } from 'react'
+import { useContext } from 'react';
 
-import {
-  About,
-  Contact,
-  Footer,
-  Header,
-  Projects,
-} from './components/index'
-import { ThemeContext } from './contexts/theme'
+import { About, Footer, Header, Projects } from './components/index';
+import { ThemeContext } from './contexts/theme';
 
 const App = () => {
-  const [{ themeName }] = useContext(ThemeContext)
+  const [{ themeName }] = useContext(ThemeContext);
 
   return (
     <div id='top' className={`${themeName} app`}>
@@ -22,13 +16,13 @@ const App = () => {
         <About />
         <Projects />
         {/* <Skills /> */}
-        <Contact />
+        {/* <Contact /> */}
         {/* <Bio /> */}
       </main>
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

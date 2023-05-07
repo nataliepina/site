@@ -1,6 +1,7 @@
 import './About.css';
 
 import {
+  FaEnvelope,
   FaFreeCodeCamp,
   FaGithub,
   FaLinkedinIn,
@@ -28,53 +29,31 @@ const About = () => {
       <div className='about__contact'>
         {social && (
           <>
-            {social.freecodecamp && (
-              <a
-                href={social.freecodecamp}
-                aria-label='freecodecamp'
-                className='link link--icon'
-              >
-                <div className='social'>
-                  <FaFreeCodeCamp />
-                </div>
-              </a>
-            )}
+            {Object.keys(social).map((key) => {
+              const Icon = {
+                email: FaEnvelope,
+                freecodecamp: FaFreeCodeCamp,
+                twitter: FaTwitter,
+                github: FaGithub,
+                linkedin: FaLinkedinIn,
+              }[key];
 
-            {social.twitter && (
-              <a
-                href={social.twitter}
-                aria-label='twitter'
-                className='link link--icon'
-              >
-                <div className='social'>
-                  <FaTwitter />
-                </div>
-              </a>
-            )}
-
-            {social.github && (
-              <a
-                href={social.github}
-                aria-label='github'
-                className='link link--icon'
-              >
-                <div className='social'>
-                  <FaGithub />
-                </div>
-              </a>
-            )}
-
-            {social.linkedin && (
-              <a
-                href={social.linkedin}
-                aria-label='linkedin'
-                className='link link--icon'
-              >
-                <div className='social'>
-                  <FaLinkedinIn />
-                </div>
-              </a>
-            )}
+              return (
+                Icon &&
+                social[key] && (
+                  <a
+                    href={social[key]}
+                    aria-label={key}
+                    className='link link--icon'
+                    key={key}
+                  >
+                    <div className='social'>
+                      <Icon />
+                    </div>
+                  </a>
+                )
+              );
+            })}
           </>
         )}
       </div>

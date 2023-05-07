@@ -5,11 +5,8 @@
   background: var(--elevation);
   transition: transform 0.2s linear;
   border-radius: 3px;
+  width: 100%;
 }
-
-/* .project:hover {
-  transform: translateY(-7px);
-} */
 
 .project__description {
   margin-top: 1rem;
@@ -31,4 +28,13 @@
 
 .project .link--icon {
   margin-left: 0.5rem;
+}
+
+.project__img-container {
+  margin: 1rem;
+}
+
+.project__gif {
+  /* height: 14em; */
+  width: 90%;
 }

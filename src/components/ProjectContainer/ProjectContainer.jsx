@@ -4,9 +4,20 @@ import { FaGithub } from 'react-icons/fa';
 import { MdOutlineOpenInNew } from 'react-icons/md';
 import uniqid from 'uniqid';
 
+import stoicGif from './assets/stoic.gif';
+import uiKitGif from './assets/ui-kit.gif';
+
 const ProjectContainer = ({ project }) => (
   <div className='project'>
     <h3>{project.name}</h3>
+
+    <div className='project__img-container'>
+      {project.name === 'UI Kit' ? (
+        <img className='project__gif' src={uiKitGif} alt={project.name} />
+      ) : (
+        <img className='project__gif' src={stoicGif} alt={project.name} />
+      )}
+    </div>
 
     <p className='project__description'>{project.description}</p>
     {project.stack && (
