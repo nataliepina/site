@@ -5,7 +5,6 @@ import {
   FaFreeCodeCamp,
   FaGithub,
   FaLinkedinIn,
-  FaTwitter,
 } from 'react-icons/fa';
 
 import { about } from '../../portfolio';
@@ -33,7 +32,6 @@ const About = () => {
               const Icon = {
                 email: FaEnvelope,
                 freecodecamp: FaFreeCodeCamp,
-                twitter: FaTwitter,
                 github: FaGithub,
                 linkedin: FaLinkedinIn,
               }[key];

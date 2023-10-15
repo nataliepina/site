@@ -16,9 +16,8 @@ const Bio = () => (
             are developed with empathy and backed by UX research. I am often the
             resident accessibility advocate. I love building community and
             getting involved, such as working with Google’s Women TechMakers.
-            You can find me sharing knowledge writing on FreeCodeCamp. Or
-            sharing CSS and JavaScript tips on Twitter. I am also a speaker and
-            open to opportunities to share with the community.
+            You can find me sharing knowledge writing on FreeCodeCamp. I am also
+            a speaker and open to opportunities to share with the community.
           </p>
           <p className='text'>
             If you’d like to get in touch, find me on the internet or shoot me
