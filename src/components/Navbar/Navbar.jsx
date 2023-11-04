@@ -6,7 +6,7 @@ import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 import { ThemeContext } from '../../contexts/theme';
-import { contact, projects } from '../../portfolio';
+import { projects } from '../../portfolio';
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
@@ -15,62 +15,38 @@ const Navbar = () => {
   const toggleNavList = () => setShowNavList(!showNavList);
 
   return (
-    <nav className='center nav'>
+    <nav className="center nav">
       <ul
         style={{ display: showNavList ? 'flex' : null }}
-        className='nav__list'
+        className="nav__list"
       >
         {projects.length ? (
-          <li className='nav__list-item'>
+          <li className="nav__list-item">
             <a
-              href='#projects'
+              href="#projects"
               onClick={toggleNavList}
-              className='link link--nav'
+              className="link link--nav"
             >
               Projects
-            </a>
-          </li>
-        ) : null}
-        {/*
-        {skills.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#skills'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Skills
-            </a>
-          </li>
-        ) : null} */}
-
-        {contact.email ? (
-          <li className='nav__list-item'>
-            <a
-              href='#contact'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Contact
             </a>
           </li>
         ) : null}
       </ul>
 
       <button
-        type='button'
+        type="button"
         onClick={toggleTheme}
-        className='btn btn--icon nav__theme'
-        aria-label='toggle theme'
+        className="btn btn--icon nav__theme"
+        aria-label="toggle theme"
       >
         {themeName === 'dark' ? <BsFillSunFill /> : <BsMoonStarsFill />}
       </button>
 
       <button
-        type='button'
+        type="button"
         onClick={toggleNavList}
-        className='btn btn--icon nav__hamburger'
-        aria-label='toggle navigation'
+        className="btn btn--icon nav__hamburger"
+        aria-label="toggle navigation"
       >
         {showNavList ? <MdClose /> : <MdMenu />}
       </button>

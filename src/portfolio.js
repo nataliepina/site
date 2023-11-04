@@ -9,8 +9,9 @@ const contact = {
 
 const about = {
   name: 'Natalie Pina',
-  role: 'Senior UX Engineer',
-  roleDescription: 'Bridging the gap between development and design.',
+  role: 'Senior Software Engineer',
+  roleDescription:
+    'Forging a UX-Driven Path Between the Realms of Development and Design.',
   description: '',
   social: {
     email: `mailto:${contact.email}`,

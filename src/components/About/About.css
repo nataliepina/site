@@ -50,25 +50,17 @@
 }
 
 .gradient-text {
-  /* fallback */
-  color: black;
-}
+  /* Create the gradient. */
+  background-image: var(--gradient);
 
-/* gradient text for modern browsers */
-@supports (background-clip: text) {
-  .gradient-text {
-    /* Create the gradient. */
-    background-image: var(--gradient);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
 
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
-
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }

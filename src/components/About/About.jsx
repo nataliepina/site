@@ -13,19 +13,19 @@ const About = () => {
   const { name, role, description, roleDescription, social } = about;
 
   return (
-    <div className='about'>
+    <div className="about">
       {name && (
         <h1>
-          <span className='about-small code'>Hi, I&#39;m</span>
-          <span className='about__name gradient-text'>{name}</span>
+          <span className="about-small code">Hi, I&#39;m</span>
+          <span className="about__name gradient-text">{name}</span>
         </h1>
       )}
 
-      {role && <h2 className='about__role code'>{role}</h2>}
-      {roleDescription && <p className='about__desc'>{roleDescription}</p>}
-      <p className='about__desc'>{description && description}</p>
+      {role && <h2 className="about__role code">{role}</h2>}
+      {roleDescription && <p className="about__desc">{roleDescription}</p>}
+      <p className="about__desc">{description && description}</p>
 
-      <div className='about__contact'>
+      <div className="about__contact">
         {social && (
           <>
             {Object.keys(social).map((key) => {
@@ -42,10 +42,10 @@ const About = () => {
                   <a
                     href={social[key]}
                     aria-label={key}
-                    className='link link--icon'
+                    className="link link--icon"
                     key={key}
                   >
-                    <div className='social'>
+                    <div className="social">
                       <Icon />
                     </div>
                   </a>
