@@ -11,7 +11,7 @@ const about = {
   name: 'Natalie Pina',
   role: 'Senior Software Engineer',
   roleDescription:
-    'Forging a UX-Driven Path Between the Realms of Development and Design.',
+    'Forging a UX-driven path between the realms of development and design.',
   description: '',
   social: {
     email: `mailto:${contact.email}`,
