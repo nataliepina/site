@@ -25,7 +25,7 @@ const projects = [
   {
     name: 'UI Kit',
     description:
-      'UI Kit is a React component library built around the D2iQ Design System. Featured in the Storybook Encyclopedia.',
+      "UI Kit is a React component library built around the D2iQ Design System. Featured in Storybook's Component Encyclopedia.",
     stack: ['Emotion', 'TypeScript', 'React'],
     sourceCode: 'https://github.com/d2iq/ui-kit',
     livePreview: 'https://design-system.d2iq.com/',
