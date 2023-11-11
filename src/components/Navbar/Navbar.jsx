@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="center nav">
-      <ul
+      {/* <ul
         style={{ display: showNavList ? 'flex' : null }}
         className="nav__list"
       >
@@ -31,7 +31,7 @@ const Navbar = () => {
             </a>
           </li>
         ) : null}
-      </ul>
+      </ul> */}
 
       <button
         type="button"
