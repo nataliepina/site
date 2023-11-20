@@ -1,6 +1,6 @@
 import './App.css';
 import { useContext } from 'react';
-import { About, Footer, Header, Projects } from './components/index';
+import { About, Footer, Header, Work } from './components/index';
 import { ThemeContext } from './contexts/theme';
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       <Header />
       <main>
         <About />
-        <Projects />
+        <Work />
       </main>
       <Footer />
     </div>

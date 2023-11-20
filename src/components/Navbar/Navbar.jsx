@@ -6,7 +6,7 @@ import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 import { ThemeContext } from '../../contexts/theme';
-import { projects } from '../../portfolio';
+import { work } from '../../portfolio';
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
@@ -16,22 +16,18 @@ const Navbar = () => {
 
   return (
     <nav className="center nav">
-      {/* <ul
+      <ul
         style={{ display: showNavList ? 'flex' : null }}
         className="nav__list"
       >
-        {projects.length ? (
+        {work.length ? (
           <li className="nav__list-item">
-            <a
-              href="#projects"
-              onClick={toggleNavList}
-              className="link link--nav"
-            >
-              Projects
+            <a href="#work" onClick={toggleNavList} className="link link--nav">
+              Work
             </a>
           </li>
         ) : null}
-      </ul> */}
+      </ul>
 
       <button
         type="button"
