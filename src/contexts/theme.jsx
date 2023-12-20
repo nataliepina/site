@@ -1,23 +1,24 @@
 import { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import Cookies from 'js-cookie';
 
 const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [themeName, setThemeName] = useState('light');
+  const [themeName, setThemeName] = useState(() => {
+    const savedTheme = Cookies.get('themeName');
+    const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    return savedTheme || (darkMediaQuery.matches ? 'dark' : 'light');
+  });
 
   useEffect(() => {
-    const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setThemeName(darkMediaQuery.matches ? 'dark' : 'light');
-    darkMediaQuery.addEventListener('change', (e) => {
-      setThemeName(e.matches ? 'dark' : 'light');
-    });
-  }, []);
+    Cookies.set('themeName', themeName, { expires: 365 });
+    // Cookie expiration set to 1 year
+  }, [themeName]);
 
   const toggleTheme = () => {
-    const name = themeName === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('themeName', name);
-    setThemeName(name);
+    setThemeName((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   };
 
   return (
