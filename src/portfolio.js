@@ -17,7 +17,7 @@ const about = {
     email: `mailto:${contact.email}`,
     linkedin: 'https://www.linkedin.com/in/nataliepina/',
     github: 'https://github.com/nataliepina',
-    freecodecamp: 'https://www.freecodecamp.org/news/author/natalie/',
+    freecodecamp: 'https://www.freecodecamp.org/news/author/nataliepina/',
   },
 };
 
