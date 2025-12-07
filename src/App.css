@@ -4,8 +4,8 @@
   /* Font families. */
   --font-family-sans: 'Inter', sans-serif;
   /* --font-family-serif: 'Playfair Display', serif; */
-  --font-family-monospace: source-code-pro, Menlo, Monaco, Consolas,
-    'Courier New', monospace;
+  --font-family-monospace:
+    source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
   /* Font sizes. */
   --font-size-xxs: 0.64rem;
@@ -39,10 +39,12 @@
   /* Shadow elevations. */
   --shadow-color: 0deg 0% 50%;
   --shadow-small: 0.5px 1px 1px hsl(var(--shadow-color) / 0.7);
-  --shadow-medium: 1px 2px 2px hsl(var(--shadow-color) / 0.333),
+  --shadow-medium:
+    1px 2px 2px hsl(var(--shadow-color) / 0.333),
     2px 4px 4px hsl(var(--shadow-color) / 0.333),
     3px 6px 6px hsl(var(--shadow-color) / 0.333);
-  --shadow-large: 1px 2px 2px hsl(var(--shadow-color) / 0.2),
+  --shadow-large:
+    1px 2px 2px hsl(var(--shadow-color) / 0.2),
     2px 4px 4px hsl(var(--shadow-color) / 0.2),
     4px 8px 8px hsl(var(--shadow-color) / 0.2),
     8px 16px 16px hsl(var(--shadow-color) / 0.2),
@@ -100,7 +102,8 @@ h3,
 
   --gradient: linear-gradient(135deg, #40c9ff, #e81cff);
 
-  --shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075),
+  --shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075),
     0 4px 4px hsl(0deg 0% 0% / 0.075), 0 8px 8px hsl(0deg 0% 0% / 0.075),
     0 16px 16px hsl(0deg 0% 0% / 0.075);
   --elevation: #fff;
